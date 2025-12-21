@@ -76,7 +76,7 @@ function App() {
                 que te preparará para obtener tu licencia de conducir con éxito.
               </p>
               <p className="about-text text-center mt-4">
-                Nuestra misión es brindarte la mejor educación vial, combinando teoría
+                Nuestra misión es brindarte la mejor educación vial, combinando teoría y
                 práctica con las técnicas más modernas de enseñanza, siempre priorizando
                 la seguridad y la confianza al volante.
               </p>
