@@ -1,0 +1,298 @@
+/* Color Palette */
+:root {
+  --primary-yellow: #F6C90E;
+  --dark-blue: #303841;
+  --medium-blue: #3A4750;
+  --light-gray: #EEEEEE;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  color: var(--dark-blue);
+}
+
+/* Navbar Styles */
+.navbar-custom {
+  background-color: var(--dark-blue);
+  padding: 1rem 0;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.navbar-custom .navbar-brand {
+  color: var(--primary-yellow) !important;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.navbar-custom .nav-link {
+  color: var(--light-gray) !important;
+  margin: 0 0.5rem;
+  transition: color 0.3s ease;
+}
+
+.navbar-custom .nav-link:hover {
+  color: var(--primary-yellow) !important;
+}
+
+/* Hero Section */
+.hero-section {
+  background: linear-gradient(135deg, var(--dark-blue) 0%, var(--medium-blue) 100%);
+  color: white;
+  padding: 100px 0;
+  min-height: 600px;
+  display: flex;
+  align-items: center;
+}
+
+.hero-section h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+  color: var(--primary-yellow);
+}
+
+.hero-section p {
+  font-size: 1.3rem;
+  margin-bottom: 2rem;
+  color: var(--light-gray);
+}
+
+.btn-primary-custom {
+  background-color: var(--primary-yellow);
+  color: var(--dark-blue);
+  border: none;
+  padding: 12px 30px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+.btn-primary-custom:hover {
+  background-color: #d9b10d;
+  color: var(--dark-blue);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+/* About Section */
+.about-section {
+  padding: 80px 0;
+  background-color: var(--light-gray);
+}
+
+.section-title {
+  color: var(--dark-blue);
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 3rem;
+  text-align: center;
+  position: relative;
+  padding-bottom: 15px;
+}
+
+.section-title::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 4px;
+  background-color: var(--primary-yellow);
+}
+
+.about-text {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: var(--medium-blue);
+}
+
+/* Services Section */
+.services-section {
+  padding: 80px 0;
+  background-color: white;
+}
+
+.service-card {
+  background-color: var(--light-gray);
+  border: none;
+  border-radius: 10px;
+  padding: 30px;
+  height: 100%;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.service-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+.service-icon {
+  font-size: 3rem;
+  color: var(--primary-yellow);
+  margin-bottom: 1.5rem;
+}
+
+.service-card h3 {
+  color: var(--dark-blue);
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.service-card p {
+  color: var(--medium-blue);
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+/* Features Section */
+.features-section {
+  padding: 80px 0;
+  background-color: var(--medium-blue);
+  color: white;
+}
+
+.features-section .section-title {
+  color: white;
+}
+
+.features-section .section-title::after {
+  background-color: var(--primary-yellow);
+}
+
+.feature-item {
+  text-align: center;
+  padding: 20px;
+  margin-bottom: 30px;
+}
+
+.feature-icon {
+  font-size: 2.5rem;
+  color: var(--primary-yellow);
+  margin-bottom: 1rem;
+}
+
+.feature-item h4 {
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: var(--primary-yellow);
+}
+
+.feature-item p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--light-gray);
+}
+
+/* Contact Section */
+.contact-section {
+  padding: 80px 0;
+  background-color: var(--light-gray);
+}
+
+.contact-form {
+  background-color: white;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.form-control:focus {
+  border-color: var(--primary-yellow);
+  box-shadow: 0 0 0 0.2rem rgba(246, 201, 14, 0.25);
+}
+
+.contact-info {
+  background-color: var(--dark-blue);
+  color: white;
+  padding: 40px;
+  border-radius: 10px;
+  height: 100%;
+}
+
+.contact-info h3 {
+  color: var(--primary-yellow);
+  margin-bottom: 2rem;
+}
+
+.contact-item {
+  margin-bottom: 1.5rem;
+  display: flex;
+  align-items: start;
+}
+
+.contact-item-icon {
+  color: var(--primary-yellow);
+  font-size: 1.5rem;
+  margin-right: 1rem;
+}
+
+.contact-item-text h5 {
+  color: var(--primary-yellow);
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.contact-item-text p {
+  color: var(--light-gray);
+  margin-bottom: 0;
+}
+
+/* Footer */
+.footer {
+  background-color: var(--dark-blue);
+  color: var(--light-gray);
+  padding: 40px 0 20px;
+}
+
+.footer h5 {
+  color: var(--primary-yellow);
+  margin-bottom: 1.5rem;
+  font-weight: bold;
+}
+
+.footer a {
+  color: var(--light-gray);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer a:hover {
+  color: var(--primary-yellow);
+}
+
+.footer-bottom {
+  border-top: 1px solid var(--medium-blue);
+  padding-top: 20px;
+  margin-top: 30px;
+  text-align: center;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hero-section h1 {
+    font-size: 2rem;
+  }
+
+  .hero-section p {
+    font-size: 1.1rem;
+  }
+
+  .section-title {
+    font-size: 2rem;
+  }
+
+  .service-card {
+    margin-bottom: 20px;
+  }
+}
