@@ -1,70 +1,130 @@
-# Getting Started with Create React App
+# Academia Choferes Punta - Landing Page
+
+Landing page para academia de choferes desarrollada con React, Bootstrap, CSS y HTML.
+
+## 🎨 Paleta de Colores
+
+- **Amarillo Principal**: #F6C90E
+- **Azul Oscuro**: #303841  
+- **Azul Medio**: #3A4750
+- **Gris Claro**: #EEEEEE
+
+## 🚀 Características
+
+- ✅ Diseño responsive con Bootstrap
+- ✅ Navegación suave entre secciones
+- ✅ Formulario de contacto funcional
+- ✅ Secciones: Hero, Nosotros, Cursos, Ventajas, Contacto
+- ✅ Footer con enlaces y redes sociales
+- ✅ Efectos hover en botones y tarjetas
+- ✅ 100% Frontend - Sin backend requerido
+
+## 📦 Tecnologías
+
+- React 18
+- React Bootstrap
+- Bootstrap 5
+- CSS3
+- HTML5
+
+## 🛠️ Instalación
+
+```bash
+# Clonar el repositorio
+git clone https://github.com/guzmansantanacola/academiachoferespunta.git
+
+# Entrar al directorio
+cd academiachoferespunta
+
+# Instalar dependencias
+npm install
+```
+
+## 💻 Uso
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
-
-In the project directory, you can run:
 
 ### `npm start`
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+The page will reload when you make changes.
 
 ### `npm run build`
 
 Builds the app for production to the `build` folder.\
 It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+The build is minified and the filenames include the hashes.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 📂 Estructura del Proyecto
 
-### `npm run eject`
+```
+academiachoferespunta/
+├── public/
+│   ├── index.html
+│   └── ...
+├── src/
+│   ├── App.js          # Componente principal con todas las secciones
+│   ├── App.css         # Estilos personalizados con paleta de colores
+│   ├── index.js        # Punto de entrada
+│   └── index.css       # Estilos globales
+├── package.json
+└── README.md
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## 🎯 Secciones de la Landing Page
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+1. **Hero**: Presentación principal con llamado a la acción
+2. **Sobre Nosotros**: Información sobre la academia
+3. **Nuestros Cursos**: 6 cursos diferentes ofrecidos
+   - Curso Teórico
+   - Clases Prácticas
+   - Preparación Examen
+   - Recuperación de Puntos
+   - Conducción Defensiva
+   - Horarios Flexibles
+4. **¿Por Qué Elegirnos?**: 4 ventajas principales
+5. **Contáctanos**: Formulario de contacto e información
+6. **Footer**: Enlaces rápidos y redes sociales
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## 📱 Responsive
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+El diseño es totalmente responsive y se adapta a:
+- 📱 Móviles (< 768px)
+- 📱 Tablets (768px - 1024px)
+- 💻 Desktop (> 1024px)
 
-## Learn More
+## 🚀 Deployment
+
+Para deployar la aplicación:
+
+```bash
+npm run build
+```
+
+Los archivos listos para producción estarán en la carpeta `build/`.
+
+Puedes deployar en:
+- GitHub Pages
+- Netlify
+- Vercel
+- Firebase Hosting
+- Cualquier servidor estático
+
+## 📄 Licencia
+
+Este proyecto fue creado para Academia Choferes Punta.
+
+---
+
+---
+
+## Create React App Documentation
 
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
 To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
