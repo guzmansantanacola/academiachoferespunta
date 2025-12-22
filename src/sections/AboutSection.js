@@ -6,7 +6,7 @@ function AboutSection() {
   const team = [
     {
       name: 'Darío Agesta Catania',
-      image: '/dario.png',
+      image: `${process.env.PUBLIC_URL}/dario.png`,
       role: 'Coaching Autos',
       icon: <FaCar />,
       description: 'Instructor de manejo.',
@@ -17,7 +17,7 @@ function AboutSection() {
     },
     {
       name: 'Fernando Agesta Catania',
-       image: '/fernando.png',
+       image: `${process.env.PUBLIC_URL}/fernando.png`,
       role: 'Coaching Motos',
       icon: <FaMotorcycle />,
       description: 'Instructor de manejo.',
@@ -28,7 +28,7 @@ function AboutSection() {
     },
     {
       name: 'Lic. Psic. Ana Claudia Martínez',
-        image: '/claudia.png',
+        image: `${process.env.PUBLIC_URL}/claudia.png`,
       role: 'Psicóloga',
       icon: <FaBrain />,
       description: 'Psicóloga clínica egresada de UCUDAL en 2005.',
