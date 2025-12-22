@@ -17,7 +17,7 @@ function HeroSection() {
             </Button>
           </Col>
           <Col lg={5} className="text-center">
-            <img src={`${process.env.PUBLIC_URL}/auto_hero.jpeg`} alt="Conducción Segura" className="hero-image" />
+            <img src="https://guzmansantanacola.github.io/academiachoferespunta/auto_hero.jpeg" alt="Conducción Segura" className="hero-image" />
           </Col>
         </Row>
       </Container>

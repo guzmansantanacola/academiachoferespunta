@@ -29,13 +29,13 @@ function FeaturesSection() {
   return (
     <section id="ventajas" className="features-section">
       <Container>
-        <h2 className="section-title text-dark">¿Por Qué Elegirnos?</h2>
+        <h2 className="section-title text-light">¿Por Qué Elegirnos?</h2>
         <Row>
           {features.map((feature, index) => (
             <Col lg={3} md={6} key={index}>
               <div className="feature-item">
                 <div className="feature-icon">{feature.icon}</div>
-                <h4 className="text-dark">{feature.title}</h4>
+                <h4 className="text-light">{feature.title}</h4>
                 <p className='text-secondary'>{feature.description}</p>
               </div>
             </Col>

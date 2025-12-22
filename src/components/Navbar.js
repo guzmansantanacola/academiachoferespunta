@@ -8,7 +8,7 @@ function Navbar() {
       <Container>
         <BSNavbar.Brand as={NavLink} to="/">
           <img 
-            src={`${process.env.PUBLIC_URL}/Logo circular.png`} 
+            src="https://guzmansantanacola.github.io/academiachoferespunta/Logo%20circular.png" 
             alt="Inicio" 
             style={{ 
               maxWidth: '150px', 
