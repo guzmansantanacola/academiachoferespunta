@@ -32,7 +32,7 @@ function StatsSection() {
         <Row>
           {stats.map((stat, index) => (
             <Col lg={3} md={6} className="mb-4" key={index}>
-              <div className="stat-item">
+              <div className="stat-item" data-aos="flip-up" data-aos-delay={index * 150}>
                 <div className="stat-icon">{stat.icon}</div>
                 <h3 className="stat-number">{stat.number}</h3>
                 <p className="stat-label">{stat.label}</p>

@@ -7,16 +7,16 @@ function CTASection() {
     <section className="cta-section">
       <Container>
         <Row className="align-items-center">
-          <Col lg={6} className="mb-4 mb-lg-0">
+          <Col lg={6} className="mb-4 mb-lg-0" data-aos="fade-right">
             <div className="cta-image-placeholder">
               <img 
-                src="https://via.placeholder.com/600x400/1a1a1a/FFC300?text=Estudiante+Conduciendo" 
+                src="https://guzmansantanacola.github.io/academiachoferespunta/training_photo1.jpeg" 
                 alt="Estudiante aprendiendo a conducir"
                 className="cta-image"
               />
             </div>
           </Col>
-          <Col lg={6}>
+          <Col lg={6} data-aos="fade-left" data-aos-delay="200">
             <div className="cta-content">
               <h2 className="cta-title">¿Listo para Comenzar?</h2>
               <p className="cta-text">

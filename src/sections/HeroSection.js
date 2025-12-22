@@ -6,7 +6,7 @@ function HeroSection() {
     <section id="inicio" className="hero-section">
       <Container>
         <Row className="align-items-center">
-          <Col lg={7} className="text-center text-lg-start">
+          <Col lg={7} className="text-center text-lg-start" data-aos="fade-right">
             <h1>Aprende a Conducir con Confianza</h1>
             <p>
               Tu camino hacia la libertad comienza aquí. Instructores certificados,
@@ -16,7 +16,7 @@ function HeroSection() {
               ¡Inscríbete Ahora!
             </Button>
           </Col>
-          <Col lg={5} className="text-center">
+          <Col lg={5} className="text-center" data-aos="fade-left" data-aos-delay="200">
             <img src="https://guzmansantanacola.github.io/academiachoferespunta/auto_hero.jpeg" alt="Conducción Segura" className="hero-image" />
           </Col>
         </Row>
