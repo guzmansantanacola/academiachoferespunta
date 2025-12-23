@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/academiachoferespunta/static/css/main.05aaea17.css",
-    "main.js": "/academiachoferespunta/static/js/main.3a31d7dc.js",
+    "main.css": "/academiachoferespunta/static/css/main.e536cdc5.css",
+    "main.js": "/academiachoferespunta/static/js/main.f9f53830.js",
     "static/js/453.044bc464.chunk.js": "/academiachoferespunta/static/js/453.044bc464.chunk.js",
     "index.html": "/academiachoferespunta/index.html",
-    "main.05aaea17.css.map": "/academiachoferespunta/static/css/main.05aaea17.css.map",
-    "main.3a31d7dc.js.map": "/academiachoferespunta/static/js/main.3a31d7dc.js.map",
+    "main.e536cdc5.css.map": "/academiachoferespunta/static/css/main.e536cdc5.css.map",
+    "main.f9f53830.js.map": "/academiachoferespunta/static/js/main.f9f53830.js.map",
     "453.044bc464.chunk.js.map": "/academiachoferespunta/static/js/453.044bc464.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.05aaea17.css",
-    "static/js/main.3a31d7dc.js"
+    "static/css/main.e536cdc5.css",
+    "static/js/main.f9f53830.js"
   ]
 }
