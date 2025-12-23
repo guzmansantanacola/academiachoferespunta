@@ -10,6 +10,7 @@ function Navbar() {
           <img 
             src="https://guzmansantanacola.github.io/academiachoferespunta/Logo%20circular.png" 
             alt="Inicio" 
+            className="navbar-logo"
             style={{ 
               maxWidth: '150px', 
               width: '50%', 

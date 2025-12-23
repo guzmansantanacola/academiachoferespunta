@@ -10,6 +10,9 @@ function ContactSection() {
     message: ''
   });
 
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitSuccess, setSubmitSuccess] = useState(false);
+
   const handleChange = (e) => {
     setFormData({
       ...formData,
@@ -19,8 +22,18 @@ function ContactSection() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    alert('¡Gracias por tu interés! Te contactaremos pronto.');
-    setFormData({ name: '', email: '', phone: '', message: '' });
+    setIsSubmitting(true);
+    
+    // Simular envío de formulario
+    setTimeout(() => {
+      setIsSubmitting(false);
+      setSubmitSuccess(true);
+      alert('¡Gracias por tu interés! Te contactaremos pronto.');
+      setFormData({ name: '', email: '', phone: '', message: '' });
+      
+      // Ocultar mensaje de éxito después de 3 segundos
+      setTimeout(() => setSubmitSuccess(false), 3000);
+    }, 1500);
   };
 
   const contactInfo = [
@@ -51,7 +64,7 @@ function ContactSection() {
       <Container>
         <h2 className="section-title">Contáctanos</h2>
         <Row>
-          <Col lg={7} className="mb-4">
+          <Col lg={7} className="">
             <div className="contact-form">
               <h3 className="mb-4" style={{ color: 'var(--dark-blue)' }}>
                 Envíanos un mensaje
@@ -59,7 +72,7 @@ function ContactSection() {
               <Form onSubmit={handleSubmit}>
                 <Form.Group className="mb-3">
                   <Form.Label>Nombre Completo</Form.Label>
-                  <Form.Control
+                  <Form.Controlmp
                     type="text"
                     name="name"
                     value={formData.name}
@@ -102,9 +115,47 @@ function ContactSection() {
                     required
                   />
                 </Form.Group>
-                <Button type="submit" className="btn-primary-custom">
-                  Enviar Mensaje
+                <Button 
+                  type="submit" 
+                  className="btn-primary-custom"
+                  disabled={isSubmitting}
+                  style={{ position: 'relative' }}
+                >
+                  {isSubmitting ? (
+                    <>
+                      <span style={{ opacity: 0 }}>Enviar Mensaje</span>
+                      <span style={{ 
+                        position: 'absolute', 
+                        left: '50%', 
+                        top: '50%', 
+                        transform: 'translate(-50%, -50%)',
+                        display: 'flex',
+                        alignItems: 'center',
+                        gap: '8px'
+                      }}>
+                        <span className="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+                        Enviando...
+                      </span>
+                    </>
+                  ) : submitSuccess ? (
+                    <>✓ Enviado</>
+                  ) : (
+                    'Enviar Mensaje'
+                  )}
                 </Button>
+                {submitSuccess && (
+                  <div style={{ 
+                    marginTop: '1rem', 
+                    padding: '0.75rem', 
+                    backgroundColor: 'var(--primary-yellow)', 
+                    color: 'var(--dark-black)',
+                    borderRadius: '4px',
+                    fontWeight: '500',
+                    animation: 'fadeIn 0.3s ease'
+                  }}>
+                    ¡Mensaje enviado con éxito! Te contactaremos pronto.
+                  </div>
+                )}
               </Form>
             </div>
           </Col>

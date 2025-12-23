@@ -13,6 +13,7 @@ function CTASection() {
                 src="https://guzmansantanacola.github.io/academiachoferespunta/training_photo1.jpeg" 
                 alt="Estudiante aprendiendo a conducir"
                 className="cta-image"
+                loading="lazy"
               />
             </div>
           </Col>
@@ -24,7 +25,7 @@ function CTASection() {
                 Contáctanos hoy y comienza tu camino hacia la libertad al volante.
               </p>
               <div className="cta-buttons">
-                <Button className="btn-cta-primary" href="/contacto">
+                <Button type='button' className="btn-cta-primary" href="#/contacto">
                   <FaPhoneAlt style={{ marginRight: '10px' }} />
                   Contactar Ahora
                 </Button>

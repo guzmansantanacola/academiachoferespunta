@@ -34,7 +34,7 @@ function Footer() {
           </Col>
         </Row>
         <div className="footer-bottom">
-          <p>&copy; 2024 Academia Choferes Punta. Todos los derechos reservados.</p>
+          <p>&copy; 2025 Academia Choferes Punta. Todos los derechos reservados.</p>
         </div>
       </Container>
     </footer>

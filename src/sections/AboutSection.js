@@ -43,11 +43,11 @@ function AboutSection() {
   return (
     <section id="nosotros" className="about-section">
       <Container>
-        <h2 className="section-title">Quiénes Somos</h2>
-        <Row className="justify-content-center mb-5">
+        <h2 className="section-title" data-aos="fade-right">Quiénes Somos</h2>
+        <Row className="justify-content-center mb-5" data-aos="fade-left">
           <Col lg={10}>
-            <p className="about-text text-center">
-              En Academia Choferes Punta, llevamos más de 15 años formando conductores
+            <p className="about-text text-center" >
+              En Academia Choferes Punta, llevamos más de 5 años formando conductores
               responsables y seguros. Contamos con instructores altamente calificados,
               vehículos equipados con doble comando y un programa de estudio completo
               que te preparará para obtener tu licencia de conducir con éxito.
@@ -66,13 +66,18 @@ function AboutSection() {
         
         <Row className="justify-content-center">
           {team.map((member, index) => (
-            <Col lg={4} md={6} className="mb-4" key={index}>
+            <Col lg={4} md={6} className="mb-4" key={index} data-aos="flip-up" data-aos-delay={index * 150}>
               <Card className="team-card h-100">
                 <Card.Body className="text-center">
                   <div className="team-icon mb-3">
                     {member.icon}
                   </div>
-                  <img src={member.image} alt={member.name} className=" w-50"/>
+                  <img 
+                    src={member.image} 
+                    alt={member.name} 
+                    className=" w-50"
+                    loading="lazy"
+                  />
                   <h4 className="team-name">{member.name}</h4>
                   <p className="team-role">{member.role}</p>
                   <p className="team-description">{member.description}</p>

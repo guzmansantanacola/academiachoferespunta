@@ -1,6 +1,6 @@
 import React from 'react';
 import AboutSection from '../sections/AboutSection';
-
+import AboutVehicles from '../sections/VehicleSection';
 
 
 
@@ -10,6 +10,7 @@ function About() {
     <div>
 
       <AboutSection />
+      <AboutVehicles />
     </div>
   );
 }

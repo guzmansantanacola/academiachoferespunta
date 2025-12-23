@@ -6,22 +6,22 @@ function StatsSection() {
   const stats = [
     {
       icon: <FaUsers />,
-      number: '2500+',
+      number: '500+',
       label: 'Alumnos Graduados'
     },
     {
       icon: <FaTrophy />,
-      number: '95%',
+      number: '98%',
       label: 'Tasa de Aprobación'
     },
     {
       icon: <FaCar />,
-      number: '15',
+      number: '6',
       label: 'Vehículos'
     },
     {
       icon: <FaStar />,
-      number: '15+',
+      number: '5+',
       label: 'Años de Experiencia'
     }
   ];

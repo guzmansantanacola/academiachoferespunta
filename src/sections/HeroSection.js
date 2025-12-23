@@ -17,7 +17,12 @@ function HeroSection() {
             </Button>
           </Col>
           <Col lg={5} className="text-center" data-aos="fade-left" data-aos-delay="200">
-            <img src="https://guzmansantanacola.github.io/academiachoferespunta/auto_hero.jpeg" alt="Conducción Segura" className="hero-image" />
+            <img 
+              src="https://guzmansantanacola.github.io/academiachoferespunta/Logo%20circular.png" 
+              alt="Conducción Segura" 
+              className="hero-image w-50"
+              loading="eager"
+            />
           </Col>
         </Row>
       </Container>

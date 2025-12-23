@@ -1,6 +1,7 @@
 import React from 'react';
-import { Container, Row, Col, Card } from 'react-bootstrap';
-import { FaBookOpen, FaCar, FaCheckCircle, FaRedoAlt, FaShieldAlt, FaCalendarAlt } from 'react-icons/fa';
+import { Container, Row, Col, Card, Button } from 'react-bootstrap';
+import { FaBookOpen, FaCar, FaCheckCircle, FaRedoAlt, FaShieldAlt, FaCalendarAlt, FaFile, FaEnvelope } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
 
 function ServicesSection() {
   const services = [
@@ -20,9 +21,9 @@ function ServicesSection() {
       description: 'Te preparamos específicamente para aprobar el examen teórico y práctico de la intendencia.'
     },
     {
-      icon: <FaRedoAlt />,
-      title: 'Recuperación de Puntos',
-      description: 'Cursos especiales para recuperación de puntos y renovación de licencia de conducir.'
+      icon: <FaFile />,
+      title: 'Trámite en IDM',
+      description: 'Academia Punta realiza los trámites correspondientes para las diferentes licencias de conducir ante la Intendencia.'
     },
     {
       icon: <FaShieldAlt />,
@@ -37,14 +38,14 @@ function ServicesSection() {
   ];
 
   return (
-    <section id="cursos" className="services-section">
+    <section id="cursos" className="services-section" data-aos="fade-up">
       <Container>
         <h2 className="section-title">Nuestros Cursos</h2>
         <Row>
           {services.map((service, index) => (
-            <Col lg={4} md={6} className="mb-4" key={index}>
+            <Col lg={4} md={6} className="mb-4" key={index} data-aos="fade-up" data-aos-delay={index * 150}>
               <Card className="service-card">
-                <div className="service-icon text-center">{service.icon}</div>
+                <div className="service-icon text-center" >{service.icon}</div>
                 <Card.Body>
                   <h3>{service.title}</h3>
                   <p>{service.description}</p>
@@ -52,6 +53,17 @@ function ServicesSection() {
               </Card>
             </Col>
           ))}
+        </Row>
+        
+        <Row className="mt-5">
+          <Col className="text-center">
+            <Link to="/contacto">
+              <Button variant="primary" size="lg" className="cta-button btn-primary-custom ">
+                <FaEnvelope className="me-2" />
+                ¡Consulta por Cursos!
+              </Button>
+            </Link>
+          </Col>
         </Row>
       </Container>
     </section>
