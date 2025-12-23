@@ -33,7 +33,7 @@ function AboutVehicles() {
             licence : 'Licencia Categoría A',
             name: 'Citroen C3',
             description: 'Hatchback moderno con motor 1.2L. Diseño ergonómico y confortable. Gran visibilidad panorámica ideal para practicar maniobras con confianza.',
-            image: 'https://guzmansantanacola.github.io/academiachoferespunta/citroenC3.png',
+            image: 'https://guzmansantanacola.github.io/academiachoferespunta/citroenc3.png',
             icon: <FaCar />
         },
         {
@@ -49,7 +49,7 @@ function AboutVehicles() {
         licence : 'Licencia Categoría G3',
         name : 'Bmw G310R',
         description : 'Moto naked de 313cc con tecnología BMW. 34 HP y peso ligero. Excelente maniobrabilidad y control para practicar con equipamiento premium.',
-        image: 'https://guzmansantanacola.github.io/academiachoferespunta/bmwG310R.png',
+        image: 'https://guzmansantanacola.github.io/academiachoferespunta/bmwg310r.png',
         icon: <FaMotorcycle />
         }
     ];
