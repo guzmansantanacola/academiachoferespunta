@@ -60,7 +60,7 @@ function ContactSection() {
   ];
 
   return (
-    <section id="contacto" className="contact-section">
+    <section id="contacto" className="contact-section" data-aos="fade-up">
       <Container>
         <h2 className="section-title">Contáctanos</h2>
         <Row>

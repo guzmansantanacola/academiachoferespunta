@@ -1,5 +1,6 @@
 import React from 'react';
 import { Container, Row, Col, Button } from 'react-bootstrap';
+import { FaChevronDown } from 'react-icons/fa';
 
 function HeroSection() {
   return (
@@ -17,12 +18,18 @@ function HeroSection() {
             </Button>
           </Col>
           <Col lg={5} className="text-center" data-aos="fade-left" data-aos-delay="200">
+            {/* Logo solo en desktop */}
             <img 
               src="https://guzmansantanacola.github.io/academiachoferespunta/Logo%20circular.png" 
               alt="Conducción Segura" 
-              className="hero-image w-50"
+              className="hero-image w-50 d-none d-lg-block m-auto"
               loading="eager"
             />
+            {/* Indicador de scroll solo en m\u00f3vil */}
+            <div className="scroll-indicator d-lg-none">
+              <p className="mb-2">Descubre más</p>
+              <FaChevronDown className="scroll-icon" />
+            </div>
           </Col>
         </Row>
       </Container>

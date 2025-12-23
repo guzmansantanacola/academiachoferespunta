@@ -63,7 +63,7 @@ function AboutVehicles() {
             
             <Row className="justify-content-center" data-aos="fade-left">
               {vehicles.map((vehicle, index) => (
-                <Col lg={4} md={6} className="mb-4" key={index} data-aos="flip-up" data-aos-delay={index * 150}>
+                <Col lg={4} md={6} className="mb-4" key={index} data-aos="fade-up">
                   <Card className="team-card h-100">
                     <Card.Body className="text-center">
                       <div className="team-icon mb-3">
