@@ -66,7 +66,7 @@ function AboutSection() {
         
         <Row className="justify-content-center">
           {team.map((member, index) => (
-            <Col lg={4} md={6} className="mb-4" key={index} data-aos="flip-up" data-aos-delay={index * 150}>
+            <Col xs={12} sm={6} md={6} lg={4} className="mb-4" key={index} data-aos="flip-up" data-aos-delay={index * 150}>
               <Card className="team-card h-100">
                 <Card.Body className="text-center">
                   <div className="team-icon mb-3">
