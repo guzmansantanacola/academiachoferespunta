@@ -72,7 +72,7 @@ function ContactSection() {
               <Form onSubmit={handleSubmit}>
                 <Form.Group className="mb-3">
                   <Form.Label>Nombre Completo</Form.Label>
-                  <Form.Controlmp
+                  <Form.Control
                     type="text"
                     name="name"
                     value={formData.name}
