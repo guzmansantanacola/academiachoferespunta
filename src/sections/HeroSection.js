@@ -12,7 +12,7 @@ function HeroSection() {
               Tu camino hacia la libertad comienza aquí. Instructores certificados,
               vehículos modernos y horarios flexibles para tu comodidad.
             </p>
-            <Button className="btn-primary-custom mx-auto mx-lg-0 mb-2 d-block d-lg-inline-block" href="/contacto">
+            <Button className="btn-primary-custom mx-auto mx-lg-0 mb-2 d-block d-lg-inline-block" href="#/contacto">
               ¡Inscríbete Ahora!
             </Button>
           </Col>

@@ -11,7 +11,7 @@ function Footer() {
           <Col lg={4} md={6} className="mb-4">
             <h5>Academia Choferes Punta</h5>
             <p>
-              Formando conductores responsables y seguros desde 2008.
+              Formando conductores responsables y seguros desde 2020.
               Tu éxito es nuestro compromiso.
             </p>
           </Col>
