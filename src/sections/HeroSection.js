@@ -3,6 +3,13 @@ import { Container, Row, Col, Button } from 'react-bootstrap';
 import { FaChevronDown } from 'react-icons/fa';
 
 function HeroSection() {
+  const scrollToSection = (sectionId) => {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  };
+
   return (
     <section id="inicio" className="hero-section">
       <Container>
@@ -25,9 +32,13 @@ function HeroSection() {
               className="hero-image w-50 d-none d-lg-block m-auto"
               loading="eager"
             />
-            {/* Indicador de scroll solo en m\u00f3vil */}
-            <div className="scroll-indicator d-lg-none">
-              <p className="mb-2">Descubre más</p>
+            {/* Indicador de scroll solo en móvil */}
+            <div 
+              className="scroll-indicator d-lg-none" 
+              onClick={() => scrollToSection('ventajas')}
+              style={{ cursor: 'pointer' }}
+            >
+              <p className="mb-2" >Descubre más</p>
               <FaChevronDown className="scroll-icon" />
             </div>
           </Col>

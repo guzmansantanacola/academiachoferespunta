@@ -20,6 +20,10 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: 'Poppins', sans-serif;
   color: var(--soft-black);
@@ -487,7 +491,9 @@ html {
   }
 }
 
-
+html {
+  scroll-behavior: smooth;
+}
 
 
 .hero-image {
